@@ -2,12 +2,6 @@ import math, cmath
 from collections import namedtuple
 Point = namedtuple('Point', ('x', 'y'))
 
-def pointToStr(pt):
-    return f"{pt.x},{pt.y}" 
-
-def segmentToStr(segment):
-    return f"{pointToStr(segment[0])}:{pointToStr(segment[1])}"
-
 def getCoordinates(origin, direction, distance):
     if (direction == "L"):
         return Point(origin.x - distance, origin.y)
